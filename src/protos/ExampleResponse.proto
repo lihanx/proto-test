@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+message ExampleResponse {
+    enum Status {
+        OK = 1;
+        ERR = 2;
+    }
+    optional Status status = 1;
+    string msg = 2;
+}
